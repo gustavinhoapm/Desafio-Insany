@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F2F5FC;
+    font-family: 'Noto Sans Linear B', sans-serif;
+    
+}
+
+
+
+.topbar {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    max-width: 100%;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    color: #4C4A5E; 
+    margin-right: 7%;   
+}
+
+.close-btn:hover {
+    color: white;
+    transition: all 0.3s;   
+}
+
+.container {
+    max-width: 100%;
+    margin-top: 35px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+}
+
+.container img {
+    width: 176px;
+    height: 39px;
+    max-width: 100%;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;   
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Isso empurra para a direita */
+    margin-right: 10%; /* Ajuste conforme necessário */
+}
+
+.contato img {
+    width: 25px;
+    max-width: 100%; /* Ajuste a largura conforme necessário */
+    height: 25px;
+    max-height: 100%;
+    margin-right: 10px;
+}
+
+.contato a.link-acessar {
+ color: #1E1C2D;
+ font-size: 14;
+ text-decoration: none;
+
+}
+
+
+.contato a.button {
+    padding: 10px 20px; /* Adicionei o padding para espaçamento interno */
+    margin-left: 10%; /* Ajuste conforme necessário */
+    max-width: 100%;
+    color: #1D63FF;
+    border: 1px solid #1D63FF;
+    text-decoration: none;
+    display: flex;
+    white-space: nowrap; 
+}
+
+@media (max-width: 700px) {
+    .contato a.button {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .close-btn {
+        margin-right: 2%; 
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
+    .container img {
+        margin-bottom: 10px; 
+    }
+
+    .contato a.button {
+        margin-top: 15px; 
+    }
+
+    .intro {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px; 
+    }
+
+    .img-intro {
+        display: none;
+    }
+
+    .titulo-intro {
+        margin-top: 10px;
+    }
+
+    .content-intro {
+        margin-top: -20px;
+        text-align: center;
+    }
+}
+
+
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    gap: 35%;
+    margin-top: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.titulo-intro{
+
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    max-width: 100%;
+    margin-left: 10%;   
+    margin-top: -500px;   
+}
+
+
+.titulo-intro P{
+    margin-left: 0;
+   
+}
+
+.img-intro {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.titulo-intro img {
+    margin-right: 10px;
+    max-width: 100%;
+}
+
+
+.content-intro { 
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-top: -550px;
+    width: 900px;
+}
+
+.content-intro span {
+    display: flex;
+    font-size: 72px;  /* Set the font size to match the original size */
+    display: flex;
+    width: 100%;
+
+}
+
+.content-intro p {
+    max-width: 100%;
+    display: flex;
+    color: black;
+    font-size: 72px;
+    font-style: normal;
+    line-height: 125%; /* 90px */
+    width: 790px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    
+}
+
+
+
+
+@media screen and (max-width: 860px) {
+    .img-intro {
+        display: none;
+    }
+
+    .content-intro { 
+        flex-direction: column;
+        text-align: center; /* Centraliza o conteúdo quando em coluna */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font-size: 32px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    .content-intro p {
+        flex-direction: column;
+        text-align: center; /* Centraliza o conteúdo quando em coluna */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 32px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    .content-intro span {
+        flex-direction: column;
+        text-align: center; /* Centraliza o conteúdo quando em coluna */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 32px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+    
+
+}
+
+
+
+
+
+
+
