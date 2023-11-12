@@ -1,0 +1,51 @@
+
+.Fale-Conosco::after {
+    content: ''; /* Adiciona um elemento de conteúdo vazio */
+    display: block; /* Transforma-o em um bloco para ocupar a largura total do link */
+    border-bottom: 2px solid transparent; /* Adiciona uma borda inferior transparente inicialmente */
+    position: absolute; /* Posiciona a borda absolutamente em relação ao link */
+    width: 0; /* Inicialmente, a borda tem largura zero */
+    transition: width 0.3s ease, bottom 0.3s ease; /* Adiciona uma transição para as propriedades 'width' e 'bottom' */
+    bottom: -5px; /* Posiciona a borda 5 pixels abaixo do texto */
+}
+
+.Fale-Conosco:hover::after {
+    width: 100%; /* Quando o mouse está sobre o link, a largura da borda torna-se 100% */
+    border-color: #1E1C2D; /* Define a cor desejada quando o mouse está sobre o link */
+    bottom: -5px; /* Mantém a posição da borda 5 pixels abaixo do texto */
+}
+
+
+
+.link-acessar::after {
+    content: ''; /* Adiciona um elemento de conteúdo vazio */
+    display: block; /* Transforma-o em um bloco para ocupar a largura total do link */
+    border-bottom: 2px solid transparent; /* Adiciona uma borda inferior transparente inicialmente */
+    position: absolute; /* Posiciona a borda absolutamente em relação ao link */
+    width: 0; /* Inicialmente, a borda tem largura zero */
+    transition: width 0.3s ease, bottom 0.3s ease; /* Adiciona uma transição para as propriedades 'width' e 'bottom' */
+    bottom: -5px; /* Posiciona a borda 5 pixels abaixo do texto */
+}
+
+.link-acessar:hover::after {
+    width: 100%; /* Quando o mouse está sobre o link, a largura da borda torna-se 100% */
+    border-color: #1E1C2D; /* Define a cor desejada quando o mouse está sobre o link */
+    bottom: -5px; /* Mantém a posição da borda 5 pixels abaixo do texto */
+
+}
+
+.contato a.button::after {
+    content: ''; /* Adiciona um elemento de conteúdo vazio */
+    display: block; /* Transforma-o em um bloco para ocupar a largura total do link */
+    border-bottom: 2px solid transparent; /* Adiciona uma borda inferior transparente inicialmente */
+    position: absolute; /* Posiciona a borda absolutamente em relação ao link */
+    width: 100%; /* Inicialmente, a borda tem largura igual à largura do botão */
+    transition: width 0.3s ease; /* Adiciona uma transição para a propriedade 'width' */
+    bottom: -2px; /* Posiciona a borda 2 pixels acima da borda inferior do botão */
+    left: 0; /* Garante que a borda comece da borda esquerda do botão */
+}
+
+.contato a.button:hover::after {
+    width: 0; /* Quando o mouse está sobre o link, a largura da borda torna-se zero */
+    border-color: #1D63FF; /* Define a cor desejada quando o mouse está sobre o link */
+}

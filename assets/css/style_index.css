@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&display=swap');
+@import url('../css/style_efeitos.css');
 
 * {
     margin: 0;
@@ -6,10 +6,12 @@
     box-sizing: border-box;
 }
 
-
-body {
+button{
+    font-family: 'Archivo';
+}
+body, html{
     background-color: #F2F5FC;
-    font-family: 'Noto Sans Linear B', sans-serif;
+    font-family: 'Archivo';
     
 }
 
@@ -25,7 +27,7 @@ body {
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 21px */
+line-height: 150%; 
 }
 
 .close-btn {
@@ -80,6 +82,7 @@ line-height: 150%; /* 21px */
  color: #1E1C2D;
  font-size: 14;
  text-decoration: none;
+ position: relative;
 
 }
 
@@ -92,7 +95,9 @@ line-height: 150%; /* 21px */
     border: 1px solid #1D63FF;
     text-decoration: none;
     display: flex;
-    white-space: nowrap; 
+    white-space: nowrap;
+    position: relative;
+   
 }
 
 @media (max-width: 700px) {
@@ -142,7 +147,7 @@ line-height: 150%; /* 21px */
     }
 
     .titulo-intro {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     .content-intro {
@@ -175,18 +180,22 @@ line-height: 150%; /* 21px */
 }
 
 
-.titulo-intro P{
+.titulo-intro p{
     margin-left: 0;
+    white-space: nowrap; 
    
 }
 
+
+
 .img-intro {
-    max-width: 100%;
+    max-width: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
+   
 }
+
 
 .titulo-intro img {
     margin-right: 10px;
@@ -200,75 +209,435 @@ line-height: 150%; /* 21px */
     max-width: 100%;
     margin-left: 10%;
     margin-top: -550px;
-    width: 900px;
+    width: 700px;
 }
 
 .content-intro span {
     display: flex;
-    font-size: 72px;  /* Set the font size to match the original size */
-    display: flex;
+    font-size: 72px;  
     width: 100%;
-
+    white-space: nowrap;
 }
 
 .content-intro p {
     max-width: 100%;
     display: flex;
-    color: black;
     font-size: 72px;
     font-style: normal;
     line-height: 125%; /* 90px */
-    width: 790px;
+    width: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
 
     
 }
 
+.content-intro h3 {
+    display: flex;
+    width: 545px;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 150%;
+    margin-top: 16px; /* Ajuste conforme necessário para espaçamento superior */
+}
+
+.botoes-intro {
+    display: inline-flex;
+    margin-left: 10%;
+    margin-top: 40px;
+    max-width: 100%;
+    max-height: 100%;  
+    align-items: center;
+    position: relative;
+}
+
+
+.botao-intro {
+display: flex;
+color: #fff;
+padding: 17px 32px 17px 32px;
+align-items: center;
+gap: 10px;
+font-size: 18px;
+font-weight: 600;
+line-height: 150%; /* 27px */
+background:#1D63FF;
+text-decoration: none;
+border: none;
+cursor: pointer;
+margin-right: 40px;
+}
+
+.botao-intro:hover {
+    color: #1D63FF;
+    background: #dee1e8;
+    transform: scale(1.05);
+    transition: all 0.3s; 
+}
+
+.botoes-intro img {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    width: 13px;
+    height: 20px;
+    margin-right: 10px;
+
+}
+
+.Fale-Conosco {
+    font-family: 'Archivo';
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #1E1C2D;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    position: relative;
+}
 
 
 
-@media screen and (max-width: 860px) {
+.Fale-Conosco-div {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;  
+}
+
+
+.Fale-Conosco-div:hover {
+
+    transform: scale(1.05);
+    transition: all 0.3s; 
+}
+
+
+.receita {
+    width: 221px;
+    height: 199px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Isso empurra para a direita */
+    margin-right: 10%; /* Ajuste conforme necessário */
+    margin-top: -115px;
+    max-width: 100%;
+    max-height: 100%;
+    
+
+}
+
+
+.icon-chat {
+    width: 63px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Isso empurra para a direita */
+    margin-right: 30%; /* Ajuste conforme necessário */
+    margin-top: -330px;
+
+
+}
+.arrow {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 50px;
+    max-width: 100%;
+    max-height: 100%;  
+    align-items: center;
+    position: absolute;
+    
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 344px;
+    background-color: #1D63FF;
+    margin-top: 387px;
+    max-width: 100%;
+    justify-content: center;
+    
+}
+
+.feedback-text {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 0;
+    width: 378px; 
+    gap: 10px;
+}
+
+
+.feedback-text p{
+    color: white;
+    font-size: 20px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+
+
+.feedback-text img {
+    width: 22px;
+    height: 22px;
+}
+
+.feedback-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 378px; 
+    gap: 10px;
+    
+}
+
+.feedback-profile img {
+    width: 54px;
+    height: 54px;
+    background-color: #FFd76f;
+    border-radius: 50px;
+}
+
+.feedback-profile p {
+    color: white;
+font-size: 18px;
+font-family: Archivo;
+font-weight: 600;
+line-height: 27px;
+word-wrap: break-word
+}
+
+.feedback-profile span {
+    color: white;
+    font-size: 14px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word
+}
+
+
+
+.feedback-status {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16%;
+
+
+
+}
+
+.lista-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lista {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -185px;
+   }
+   
+   .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   }
+   
+   .numero {
+
+    font-weight: bold;
+    color: white;
+font-size: 56px;
+font-family: Archivo;
+font-weight: 400;
+line-height: 70px;
+word-wrap: break-word
+   }
+   
+   .descricao {
+    align-self: flex-start;
+    margin-top: 5px;
+    color: white;
+font-size: 18px;
+font-family: Archivo;
+font-weight: 400;
+line-height: 27px;
+word-wrap: break-word
+   }
+
+
+
+   .img-container {
+    display: flex;
+    position: absolute; /* Define a posição absoluta para permitir o posicionamento personalizado */
+    width: 382px;
+    height: 100px;
+    align-items: start;
+    margin-right: 230px;
+    
+    
+}
+
+.obs {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: auto;
+    margin-top: 55px;
+    font-size: 14px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
     .img-intro {
         display: none;
     }
 
-    .content-intro { 
-        flex-direction: column;
-        text-align: center; /* Centraliza o conteúdo quando em coluna */
+    .titulo-intro {
+        text-align: center; 
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
-        font-size: 32px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        text-align: center;
+        text-align: center; /* Centraliza o título na horizontal */
+        margin-top: 20px; /* Ajuste conforme necessário para dar espaço ao título */
+    }
+
+    .content-intro { 
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; /* Ajuste conforme necessário para espaçamento superior */
     }
 
     .content-intro p {
-        flex-direction: column;
-        text-align: center; /* Centraliza o conteúdo quando em coluna */
+        display: inline-block;
+        align-items: center;
+        text-align: center; /* Centraliza o conteúdo na horizontal */
+        font-size: 32px; /* Ajuste para 32 pixels */
+        margin-top: 10px; 
+    }
+    .content-intro span {
+        align-items: center;
+        display: inline-block;
+        text-align: center; /* Centraliza o conteúdo na horizontal */
+        font-size: 32px; /* Ajuste para 32 pixels */
+        margin-top: 10px; /* Ajuste conforme necessário para espaçamento entre elementos */
+    }
+
+    .content-intro h3 {
+        margin-left: auto;
+        margin-right: auto; /* Adicionado para centralizar horizontalmente */
+        text-align: center; /* Centraliza o conteúdo na horizontal */
+        font-size: 16px; /* Ajuste para 32 pixels */
+        margin-top: 10px; 
+    }
+
+    .botao-intro {
+        margin-right: 0;
+    }
+
+    .botoes-intro {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 32px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .content-intro span {
-        flex-direction: column;
-        text-align: center; /* Centraliza o conteúdo quando em coluna */
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 32px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        text-align: center;
+    .botoes-intro img {
+        margin-right: 0; /* Removendo margem à direita para empilhar a imagem abaixo do botão */
+        margin-top: 0; /* Adicionando margem superior para espaçamento entre a imagem e o link */
     }
-    
+
+    .Fale-Conosco {
+        margin-top: 0; /* Removendo margem superior para alinhar o link com a imagem */
+        margin-left: auto;
+        margin-right: auto; 
+        align-items: center;
+        text-align: center;
+
+    }	
+
+    .Fale-Conosco-div {
+        margin-top: 20px;
+    }
+
+    .receita {
+        width: 221px;
+        height: 199px;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        position: fixed; /* Torna o elemento fixo na tela */
+        top: 50%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Corrige a posição após a centralização */
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0; /* Remover margens que podem interferir com o posicionamento */
+        margin-top: 300px;
+        margin-left: 190px;
+    }
+
 
 }
+
+
+
+
+
+@media screen and (max-width: 1276px) {
+
+    .icon-chat img {
+        width: 37px;
+        height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed; /* Torna o elemento fixo na tela */
+        top: 50%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Corrige a posição após a centralização */
+        margin: 0; /* Remover margens que podem interferir com o posicionamento */
+    }
+}
+
+
+
+
+
 
 
 
