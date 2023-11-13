@@ -386,6 +386,10 @@ margin-right: 40px;
     margin-top: 387px;
     max-width: 100%;
     justify-content: center;
+    background-image: url("../img/Mask\ group.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -661,13 +665,14 @@ word-wrap: break-word;
     background-color: #1D63FF;
     color: #fff;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 50%; 
     font-weight: bold;
     transition: background-color 0.3s ease;
     background-image: url('../img/Play.png');
     background-repeat: no-repeat;
     background-position: center;
-    border: 6px rgba(71, 96, 255, 0.30) solid
+    border: 6px rgba(71, 95, 255, 0.655) solid;
+    box-shadow: 0 0 10px rgba(71, 95, 255, 0.575);
 
   }
   
@@ -710,6 +715,68 @@ word-wrap: break-word;
   .patrocinio-itens div:hover img {
     filter: grayscale(0%);
   }
+
+  
+.metodologia { 
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-top: 120px;
+    width: 700px;
+}
+
+
+.tag-meto {
+    color: #1D63FF;
+font-size: 14px;
+font-family: Archivo;
+font-weight: 600;
+line-height: 21px;
+word-wrap: break-word
+}
+
+.meto-titulo {
+    color: #0D0B1A;
+    font-size: 48px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 60px;
+    word-wrap: break-word;
+width: 483px;
+margin-top: 16px;
+}
+
+.meto-img-info-1 {
+    display: flex;
+    width: 164px;
+    height: 255px;
+    margin-left: auto;
+    max-width: 100%;
+    margin-left: 213px;
+    margin-right: 105px;
+    margin-top: 23px;
+    position: relative;
+}
+
+.computador {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .reflexo {
+    position: absolute;
+    top: 10px; /* ajuste conforme necessário */
+    left: 10px; /* ajuste conforme necessário */
+    width: 80%; /* ajuste conforme necessário */
+    height: auto;
+    display: block;
+  }
+
+
+
+
 
 
   
