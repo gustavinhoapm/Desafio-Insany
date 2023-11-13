@@ -9,8 +9,12 @@
 button{
     font-family: 'Archivo';
 }
-body, html{
+
+.background-group {
     background-color: #F2F5FC;
+}
+
+body, html{
     font-family: 'Archivo';
     
 }
@@ -329,6 +333,8 @@ margin-right: 40px;
     margin-top: -115px;
     max-width: 100%;
     max-height: 100%;
+    box-shadow: 0px 30px 40px -20px rgba(96, 74, 74, 0.2); 
+    backdrop-filter: blur(24px)"
     
 
 }
@@ -355,6 +361,19 @@ margin-right: 40px;
     max-height: 100%;  
     align-items: center;
     position: absolute;
+    
+}
+
+
+.arrow-sobre {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    max-width: 100%;
+    max-height: 100%;  
+    align-items: center;
+    position: absolute;
+    margin-top: -25px;
     
 }
 
@@ -466,7 +485,7 @@ word-wrap: break-word
    }
    
    .numero {
-
+    display: flex;
     font-weight: bold;
     color: white;
 font-size: 56px;
@@ -513,6 +532,187 @@ word-wrap: break-word
     word-wrap: break-word;
     width: 100%;
 }
+
+
+
+.sobre { 
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-top: 120px;
+    width: 700px;
+}
+
+.tag {
+    color: #1D63FF;
+font-size: 14px;
+font-family: Archivo;
+font-weight: 600;
+line-height: 21px;
+word-wrap: break-word
+}
+
+.sobre-titulo {
+    color: #0D0B1A;
+    font-size: 48px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 60px;
+    word-wrap: break-word;
+width: 483px;
+margin-top: 16px;
+}
+
+.box-check {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+    
+}
+
+.item-check {
+    display: flex;  
+    color: #2A2739;
+font-size: 14px;
+font-family: Archivo;
+font-weight: 400;
+line-height: 21px;
+word-wrap: break-word
+  }
+
+.box-check img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+
+
+}
+
+.box-check p {
+    margin: 0;
+}
+
+
+.img-info {
+    display: flex;
+    width: 164px;
+    height: 255px;
+    margin-left: auto;
+    max-width: 100%;
+    margin-left: 213px;
+    margin-right: 105px;
+    margin-top: 23px;
+}
+
+.video-imagem {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+
+  .video-imagem img {
+    box-shadow: 0px 30px 40px -20px rgba(96, 74, 74, 0.2); 
+  }
+
+  .video-imagem p {
+    margin-top: 25px;
+    color: #2A2739;
+font-size: 18px;
+font-family: Archivo;
+font-weight: 400;
+line-height: 27px;
+word-wrap: break-word;
+  }
+
+  .video-imagem span {
+    color: #2A2739;
+font-size: 18px;
+font-family: Archivo;
+font-weight: 600;
+line-height: 27px;
+word-wrap: break-word;
+
+  }
+
+  .imagem-container {
+    position: relative;
+    max-width: 100%;
+  }
+
+  .video-img {
+    display: flex;
+    width: auto;
+    height: auto;
+  } 
+
+  .botao {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #1D63FF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-image: url('../img/Play.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 6px rgba(71, 96, 255, 0.30) solid
+
+  }
+  
+  .botao:hover {
+    background-color: #1450c7;
+  }
+  
+
+
+  .patrocinio {
+    text-align: center;
+    background-color: #F2F5FC;
+    height: 136px;
+    display: flex; /* Adiciona um display flex à .patrocinio */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center;
+    margin-top: 120px;
+    
+  }
+
+  .patrocinio-itens {
+    gap: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .patrocinio-itens div {
+    margin: 0 15px;
+  }
+
+  .patrocinio-itens img {
+    width: 110px; /* Largura ajustada para 120px */
+    height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+  }
+
+  .patrocinio-itens div:hover img {
+    filter: grayscale(0%);
+  }
+
+
+  
 
 
 
@@ -594,22 +794,6 @@ word-wrap: break-word
         margin-top: 20px;
     }
 
-    .receita {
-        width: 221px;
-        height: 199px;
-        display: flex;
-        align-items: right;
-        justify-content: right;
-        position: fixed; /* Torna o elemento fixo na tela */
-        top: 50%; /* Centraliza verticalmente */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translate(-50%, -50%); /* Corrige a posição após a centralização */
-        max-width: 100%;
-        max-height: 100%;
-        margin: 0; /* Remover margens que podem interferir com o posicionamento */
-        margin-top: 300px;
-        margin-left: 190px;
-    }
 
 
 }
@@ -620,20 +804,246 @@ word-wrap: break-word
 
 @media screen and (max-width: 1276px) {
 
-    .icon-chat img {
-        width: 37px;
-        height: 37px;
+    .arrow {
+        display: none;
+    }
+
+    .arrow-sobre {
+        display: none;
+    }
+
+    .icon-chat {
+        width: 70px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        margin-top: 200px;
+    }
+
+    .icon-chat img {
+        width: 100%;
+        height: 100%;
+        margin-right: 0;
+    }
+
+    
+    .receita {
+        max-width: 100%;
+        max-height: 100%;
+        width: 221px;
+        height: 199px;
+        display: flex;
+        align-items: right;
+        justify-content: right;
         position: fixed; /* Torna o elemento fixo na tela */
-        top: 50%; /* Centraliza verticalmente */
-        left: 50%; /* Centraliza horizontalmente */
+        top: 50%; /* Centraliza verticalmente */    
         transform: translate(-50%, -50%); /* Corrige a posição após a centralização */
         margin: 0; /* Remover margens que podem interferir com o posicionamento */
-    }
+        margin-top: 400px;
+        margin-left: 70%;
+        margin-right: auto;
+        position: absolute;
 }
 
+
+
+.feedback {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    margin-top: 700px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+  }
+
+  .feedback-profile { 
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .feedback-text {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .feedback-status {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 300px; /* Ajuste conforme necessário para espaçamento entre a lista e o bloco feedback */
+  }
+
+  .lista-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Adicionado para centralizar o conteúdo na horizontal */
+  }
+
+  .img-container {
+    max-width: 100%;
+    text-align: center;
+    margin-right: 0;
+    overflow: hidden;
+    display: none;
+  }
+
+  .img-container img {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+
+  }
+
+  .item {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .lista {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .item-check {
+    text-align: center;
+    margin-bottom: 10px; /* Ajuste conforme necessário para espaçamento entre itens */
+    align-items: center;
+  }
+
+  .numero {
+    text-align: center;
+    align-items: center;
+  }
+
+  .obs {
+    margin-top: 20px; /* Ajuste conforme necessário para espaçamento entre o texto e a lista */
+    text-align: center;
+  }
+
+  .feedback-text img {
+    margin-right: 0;
+  }
+
+.sobre {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+    margin-top: 50px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    margin: auto;
+
+  }
+
+  .sobre-empresa {
+    max-width: 100%;
+    flex-direction: column;
+    margin-top: 50px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .tag {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .box-check {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-titulo {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+  }
+
+  .video-imagem {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin-top: -990px;
+  }
+
+
+
+  .img-info {
+
+    max-width: 100%;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 170px;
+    margin-top: 800px;
+    
+  }
+
+
+
+  .video-img {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+
+  }
+
+  .patrocinio {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin-top: 500px;
+  }
+
+  .patrocinio-itens {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+  }
+
+}
 
 
 

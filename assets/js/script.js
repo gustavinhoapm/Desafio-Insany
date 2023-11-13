@@ -6,16 +6,20 @@ function fecharTopBar() {
 }
 
 
-// Arquivo script.js
-document.addEventListener("DOMContentLoaded", function() {
-    var words = ["sucesso!", "destaque!", "impacto!"];
-    var randomIndex = Math.floor(Math.random() * words.length);
+// numeros randomicos inicialização da pagina
+document.addEventListener('DOMContentLoaded', function () {
+  const dynamicTextElement = document.getElementById('dynamicText');
+  const words = ['sucesso', 'destaque', 'impacto'];
+  let currentIndex = 0;
 
-    var randomWordSpan = document.getElementById("randomWord");
-    randomWordSpan.textContent = "negócio é o " + words[randomIndex];
+  function changeWord() {
+      const originalText = 'negócio é o';
+      dynamicTextElement.innerHTML = `${originalText} ${words[currentIndex]}!`;
+      currentIndex = (currentIndex + 1) % words.length;
+  }
+
+  setInterval(changeWord, 1300);
 });
-
-
 
 //animação dos numeros feedback
 
@@ -67,4 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
     startCounting(counters.count1, "count1");
     startCounting(counters.count2, "count2");
     startCounting(counters.count3, "count3");
+  });
+
+
+
+  // Coloração das cores do patrocinio
+
+  const patrocinadores = document.querySelectorAll('.patrocinador');
+
+  patrocinadores.forEach(patrocinador => {
+    patrocinador.addEventListener('mouseover', () => {
+      const img = patrocinador.querySelector('img');
+      img.style.filter = 'grayscale(0%)';
+    });
+
+    patrocinador.addEventListener('mouseout', () => {
+      const img = patrocinador.querySelector('img');
+      img.style.filter = 'grayscale(100%)';
+    });
   });
