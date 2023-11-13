@@ -380,17 +380,19 @@ margin-right: 40px;
 .feedback {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 344px;
     background-color: #1D63FF;
     margin-top: 387px;
     max-width: 100%;
     justify-content: center;
-    background-image: url("../img/Mask\ group.png");
-    background-position: center;
+    background-image: url("../img/retangulo-1.png"),
+                      url("../img/retangulo-2.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: left top, right bottom;
     
+
+
 }
 
 .feedback-text {
@@ -706,8 +708,8 @@ word-wrap: break-word;
   }
 
   .patrocinio-itens img {
-    width: 110px; /* Largura ajustada para 120px */
-    height: 40px;
+    width: 210px; /* Largura ajustada para 120px */
+    height: 55px;
     filter: grayscale(100%);
     transition: filter 0.3s;
   }
@@ -718,12 +720,13 @@ word-wrap: break-word;
 
   
 .metodologia { 
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     max-width: 100%;
     margin-left: 10%;
     margin-top: 120px;
-    width: 700px;
+    flex-wrap: nowrap;
 }
 
 
@@ -747,38 +750,505 @@ width: 483px;
 margin-top: 16px;
 }
 
-.meto-img-info-1 {
+.meto-mg-info-1 {
     display: flex;
-    width: 164px;
-    height: 255px;
-    margin-left: auto;
-    max-width: 100%;
-    margin-left: 213px;
-    margin-right: 105px;
-    margin-top: 23px;
+    flex: 1;
+    width: 384px;
+    height: 476px;
+    flex-shrink: 0;
+    display: flex;
     position: relative;
+    margin-left: auto;
+    background-color: #F2F5FC;
 }
 
-.computador {
+.meto-mg-info-div {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    position: relative; 
+    align-items: baseline;
+    margin-left: 15px;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.computador, .reflexo {
     width: 100%;
     height: auto;
     display: block;
-  }
+}
 
-  .reflexo {
+.reflexo {
     position: absolute;
-    top: 10px; /* ajuste conforme necessário */
-    left: 10px; /* ajuste conforme necessário */
-    width: 80%; /* ajuste conforme necessário */
+    top: 15px; 
+    left: 15px; 
+    width: 90%; 
     height: auto;
     display: block;
-  }
+}
+
+.meto-mg-info-2 {
+    width: 176px;
+    height: 195px;
+}
+
+.meto-img-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+
+
+.passo-a-passo {
+    display: flex;
+    max-width: 100%;
+    margin-left: 15%;
+    margin-top: 30px;
+    width: 700px;
+    gap: 30px;
+    position: relative;
+}
+
+.img-passo {
+    align-self: center; /* Alinha a imagem ao centro verticalmente */
+}
+
+.passo-a-passo-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 55px; /* Adapte conforme necessário */
+}
+
+
+
+.passo {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 67px; /* Adapte conforme necessário */
+}
 
 
 
 
+.passo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
 
 
+    }
+
+    
+    .passo-texto p{
+        font-family: Archivo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+    }
+
+    .passo-texto span{
+
+        font-family: Calibri;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+  
+    }
+
+
+.spacing{
+    max-width: 100%;
+    background-color: #F2F5FC;
+    height: 120px;
+    margin-top: 70px;
+}
+
+
+    .blog { 
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        margin-left: 10%;
+
+        flex-wrap: nowrap;
+
+    }
+
+    .bg-blog {
+        background-color: #F2F5FC;
+    }
+
+    .blog-tag{
+        color: #1D63FF;
+    font-size: 14px;
+    font-family: Archivo;
+    font-weight: 600;
+    line-height: 21px;
+    word-wrap: break-word
+    }
+    
+    .blog-titulo {
+        color: #0D0B1A;
+        font-size: 48px;
+        font-family: Archivo;
+        font-weight: 400;
+        line-height: 60px;
+        word-wrap: break-word;
+        width: 411px;
+        margin-top: 16px;
+    }
+
+    .texto-intro {
+        margin-top: 120px;
+        max-width: 100%;
+        margin-left: 27%;
+        height: auto;
+        position: relative;
+         /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    }
+
+
+    .texto-intro a {
+        color: #0D0B1A;
+        position: relative;
+        text-decoration: none; /* Remova a decoração de texto padrão para evitar sublinhado */
+        font-family: Archivo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+    }
+
+    .seta-generica {
+        margin-top: 120px;
+        margin-left: auto; /* Empurra a .seta-generica para a direita */
+        margin-right: 21%;
+    }
+    .container-img {
+        gap: 50px;
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
+        flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha quando não houver espaço suficiente */
+        margin-top: 100px;
+    }
+    
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items:start; /* Centraliza os itens horizontalmente dentro de cada .image-container */
+        
+    }
+    
+    .image-container img {
+
+        width: 331px; /* Ajuste a largura conforme necessário */
+        height: 354px; /* Ajuste a altura conforme necessário */
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .text-container {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .text-container p {
+        color: var(--brand-primary-default, #1D63FF);
+/* Body / 16 / semi */
+            font-family: Archivo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 24px */
+
+        align-self: flex-start; /* Alinha o texto no início verticalmente */
+    }
+
+
+    .text-container span {
+        color: var(--brand-neutrals-dark-300, #353345);
+/* Body/16/regular */
+font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+    }
+
+ .desc-blog {
+    font-family: Archivo;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+width: 331px;
+margin-top: 20px;
+ }
+
+ .additional-content {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.additional-content img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.additional-content p {
+    flex-direction: column;
+    margin: 0; /* Remove a margem padrão do parágrafo para evitar espaçamento extra */
+
+}
+
+.additional-content span {
+    display: flex;
+    flex-direction: column; /* Coloca o <span> em coluna (um embaixo do outro) */
+}
+
+
+.add-desc p{
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+}
+
+.add-desc span {
+    font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+
+.slider {
+    margin-top: 100px; /* Ajuste conforme necessário para definir a distância entre a última imagem e o slider */
+    text-align: center;
+}
+
+.spacing-bottom{
+    max-width: 100%;
+    background-color: #F2F5FC;
+    height: 120px;
+}
+
+
+
+
+.duvidas { 
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-top: 120px;
+    flex-wrap: nowrap;
+}
+
+
+.tag-duvidas {
+    color: #1D63FF;
+font-size: 14px;
+font-family: Archivo;
+font-weight: 600;
+line-height: 21px;
+word-wrap: break-word
+}
+
+.duvidas-titulo {
+    color: #0D0B1A;
+    font-size: 48px;
+    font-family: Archivo;
+    font-weight: 400;
+    line-height: 60px;
+    word-wrap: break-word;
+width: 483px;
+margin-top: 16px;
+margin-bottom: 16px;
+}
+
+.desc-duvidas {
+    font-family: Archivo;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */
+width: 411px;
+}
+
+.botao-duvidas{
+    display: flex;
+    color: #fff;
+    padding: 17px 32px 17px 32px;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+    background:#1D63FF;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+    }
+    
+    .botao-duvidas:hover {
+        color: #1D63FF;
+        background: #dee1e8;
+        transform: scale(1.05);
+        transition: all 0.3s; 
+    }
+
+    .botoes-duvidas {
+
+        flex-direction: column;
+        margin-top: 40px;
+        max-width: 100%;
+        max-height: 100%;  
+        align-items: center;
+        
+    }
+    
+    .Fale-Conosco-duvidas {
+        font-family: 'Archivo';
+
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #1E1C2D;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    position: relative;
+    
+      }
+
+      .botoes-inferiores {
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px; /* Ajuste conforme necessário para definir a distância entre o botão e os elementos abaixo */
+      
+      }
+
+      .accordion {
+        margin-left: auto;
+        padding: 20px;
+        margin-right: 10%;
+        width: 100%;
+      }
+
+      .accordion-item {
+        border-bottom: 1px solid #CBD6E2;
+        margin-bottom: 50px; /* Adicione margem inferior entre os itens */
+        margin: 20px;
+    }
+    
+    .accordion-header {
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 55px;
+    }
+    
+    .accordion-content {
+        display: none;
+        padding: 10px;
+    }
+    
+    .accordion-toggle {
+        font-weight: bold;
+    }
+    
+    .accordion-item.active .accordion-content {
+        display: block;
+    }
+
+    .accordion-header p{
+        padding: 30px;
+    }
+    
+    .accordion-header span {
+        color: #4C4A5E;
+        font-size: 35px;
+    }
+
+    .container-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+       
+        
+       
+    
+      }
+      
+      .cards {
+        max-width: 100%;
+        max-height: 100%;
+        background: var(--brand-neutrals-light-gray-01, #F2F5FC);
+        width: 450px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .cards :hover {
+        background: rgba(255, 255, 255, 0.90);
+      }
+      
+      .img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0; /* Ajuste conforme necessário para o espaçamento entre os cards */
+      }
+      
+      .img-container img {
+        padding: 10px;
+      }
+
+      .cards:hover {
+        background: rgba(255, 255, 255, 0.90);
+        transition: all 0.3s;   
+      
+    }
+
+ 
+    
+    
+
+    
+
+    
+    
   
 
 
@@ -911,7 +1381,7 @@ margin-top: 16px;
         top: 50%; /* Centraliza verticalmente */    
         transform: translate(-50%, -50%); /* Corrige a posição após a centralização */
         margin: 0; /* Remover margens que podem interferir com o posicionamento */
-        margin-top: 400px;
+        margin-top: 470px;
         margin-left: 70%;
         margin-right: auto;
         position: absolute;
@@ -1110,7 +1580,235 @@ margin-top: 16px;
     text-align: center;
   }
 
+
+  .metodologia {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .meto {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .tag-meto {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+  }
+
+  .meto-titulo {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+font-family: Archivo;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 30px */
+  }
+
+  .meto-mg-info-1 {
+    max-width: 100%; /* Define a largura para 100% quando a tela for menor que 960px */
+
 }
+
+.meto-mg-info-2 {
+    max-width: 100%; /* Define a largura para 100% quando a tela for menor que 960px */
+}
+
+.reflexo {
+    display: none;
+}
+.computador {
+    max-width: 100%;
+    margin: 0;
+}
+
+.meto-mg-info-1,
+.meto-mg-info-2 {
+    max-width: 50%; /* Defina a largura para menos de 50% para deixar espaço para a margem e gap */
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+}
+
+.meto-mg-info-div {
+    max-width: 100%;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 700px;
+    max-height: auto;
+}
+
+.passo-a-passo {
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin-top: -850px;
+}
+ 
+.img-passo {
+    max-width: 100%;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+}
+
+.passo-a-passo-div{
+    display: flex;
+    flex-direction: column; /* ou row, dependendo da orientação desejada */
+    align-items: left;
+    justify-content: left;
+    max-width: 100%;
+    height: auto;
+    /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    text-align: left;
+    margin: 0;
+    gap: 67px;
+  } 
+
+  .passo-texto p {
+    font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+white-space: nowrap;
+  }
+
+  .passo-texto span {
+    font-family: Calibri;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+white-space: nowrap;
+  }
+
+  .passo {
+    max-width: 100%;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    margin-bottom: 10px;
+  }
+
+
+
+  .blog{
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.blog-intro {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+}
+
+
+.blog-tag {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+}
+
+.blog-titulo {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+}
+
+.texto-intro {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+}
+
+.container-img {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.bg-blog {
+    max-width: 100%;
+}
+
+.image-container {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+}
+
+.image-container img{
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+}
+
+}
+
+
+
+
+
 
 
 
