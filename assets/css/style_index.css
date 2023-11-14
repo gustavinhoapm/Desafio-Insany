@@ -16,7 +16,7 @@ button{
 
 body, html{
     font-family: 'Archivo';
-    
+   
 }
 
 
@@ -685,6 +685,7 @@ word-wrap: break-word;
 
 
   .patrocinio {
+    max-width: 100%;
     text-align: center;
     background-color: #F2F5FC;
     height: 136px;
@@ -696,6 +697,7 @@ word-wrap: break-word;
   }
 
   .patrocinio-itens {
+    max-width: 100%;
     gap: 45px;
     display: flex;
     justify-content: center;
@@ -708,6 +710,7 @@ word-wrap: break-word;
   }
 
   .patrocinio-itens img {
+    max-width: 100%;
     width: 210px; /* Largura ajustada para 120px */
     height: 55px;
     filter: grayscale(100%);
@@ -996,6 +999,26 @@ font-weight: 400;
 line-height: 150%; /* 30px */
 width: 331px;
 margin-top: 20px;
+ }
+
+ .text-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+ }
+
+ .text-container p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
  }
 
  .additional-content {
@@ -1728,6 +1751,7 @@ white-space: nowrap;
     align-items: center;
     text-align: center;
     margin-top: 200px;
+    margin-left: 0;
 }
 
 .blog-intro {
@@ -1759,12 +1783,14 @@ white-space: nowrap;
 }
 
 .texto-intro {
+   
     max-width: 100%;
     flex-direction: column;
     height: auto;
      /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
     align-items: center;
     text-align: center;
+    margin: 0;
 }
 
 .container-img {
@@ -1801,6 +1827,86 @@ white-space: nowrap;
     text-align: center;
     margin: 0;
 
+}
+
+.duvidas {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.duvidas-intro {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.duvidas-titulo {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.desc-duvidas {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.botoes-duvidas {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.botao-duvidas {
+    max-width: 100%;
+    width: auto;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.botoes-inferiores {
+    width: auto;
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
 }
