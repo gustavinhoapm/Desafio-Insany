@@ -1,3 +1,4 @@
+@import url('../css/style_media.css');
 @import url('../css/style_efeitos.css');
 
 * {
@@ -28,10 +29,18 @@ body, html{
     width: 100%;
     padding: 10px;
     max-width: 100%;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    overflow: hidden; /* Certifica-se de que o conteúdo não ultrapassa a barra */
+    transition: height 0.3s ease; 
+}
+
+.topbar.hidden {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .close-btn {
@@ -521,6 +530,8 @@ word-wrap: break-word
     height: 100px;
     align-items: start;
     margin-right: 230px;
+    justify-content: center;
+
     
     
 }
@@ -617,6 +628,7 @@ word-wrap: break-word
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-left: 250px;
     margin-top: 0;
     margin-bottom: auto;
   }
@@ -1118,7 +1130,7 @@ width: 411px;
 }
 
 .botao-duvidas{
-    display: flex;
+    
     color: #fff;
     padding: 17px 32px 17px 32px;
     align-items: center;
@@ -1141,7 +1153,7 @@ width: 411px;
     }
 
     .botoes-duvidas {
-
+        
         flex-direction: column;
         margin-top: 40px;
         max-width: 100%;
@@ -1151,8 +1163,8 @@ width: 411px;
     }
     
     .Fale-Conosco-duvidas {
-        font-family: 'Archivo';
 
+        font-family: 'Archivo';
     text-align: center;
     align-items: center;
     text-decoration: none;
@@ -1167,6 +1179,7 @@ width: 411px;
       }
 
       .botoes-inferiores {
+        
         max-width: 100%;
         height: auto;
         align-items: center;
@@ -1255,6 +1268,8 @@ width: 411px;
       }
       
       .img-container img {
+        max-width: 100%;
+        height: auto;
         padding: 10px;
       }
 
@@ -1264,18 +1279,159 @@ width: 411px;
       
     }
 
+    .new {
+        display: flex;
+        max-width: 100%;
+        height: 456px;
+        background-image: url('../img/bg-news.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 60px;
+        justify-content: center;
+        
+    }
+
+    .text-new {
+        margin-top: 150px;
+        text-align: center;
+        color: white;
+        width: 100%; /* Adicionado width: 100%; para ocupar a largura total do pai */
+      }
+
+    .text-new p {
+  margin: 0;
+  margin-bottom: 18px;
+    }
+
  
+.tag-new {
+    max-width: 100%;
+    color: var(--brand-primary-default, #1D63FF);
+/* Body / 16 / semi */
+font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 24px */
+}
     
-    
+.titulo-new {
+    max-width: 100%;
+    color: #FFF;
 
-    
+text-align: center;
+/* Heading/40/regular */
+font-family: Archivo;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 50px */
+}
 
-    
-    
+    .desc-new {
+        max-width: 100%;
+        color: #FFF;
+text-align: center;
+/* Body/16/regular */
+font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+width: 518px;
+    }
+
+    .email-container {
+        position: relative;
+        max-width: 490px;
+        margin: 0 auto;
+      }
+      
+      .placeholder-label {
+        position: absolute;
+        top: 50%;
+        left: 45px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: transform 0.3s, font-size 0.3s, color 0.3s;
+        color: #aaa; /* Cor do placeholder padrão */
+      }
+      
+      .email-input {
+        height: 70px;
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+        padding-left: 40px;
+      }
+      
+      .email-icon {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        height: 30px;
+        cursor: pointer;
+        width: 18px;
+        height: 15px;
+      }
+      
+      .submit-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 50px;
+        width: 150px;
+        padding: 5px;
+        background-color: #1D63FF;
+        color: white;
+        cursor: pointer;
+        border: none    ;
+      }
+      
+      .email-input input {
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      
+      .email-input input:focus {
+        border-color: #1D63FF;
+        box-shadow: 0 0 5px rgba(29, 99, 255, 0.5);
+      }
+      
+      .submit-button:hover {
+        transition: all 0.3s;
+        background-color: #d7dae0;
+        color: #1D63FF;
+      }
+      
+      .placeholder-label.focused {
+        transform: translateY(-100%) scale(0.8);
+        font-size: 12px;
+        color: #1D63FF; /* Cor ao focar ou quando o campo não está vazio */
+        transition: transform 0.3s, font-size 0.3s, color 0.3s;
+      }
+      
+      .email-input:not(:placeholder-shown) + .placeholder-label,
+      .email-input:focus + .placeholder-label {
+        transform: translateY(-100%) scale(0.8);
+        font-size: 12px;
+        color: #1D63FF; /* Cor ao focar ou quando o campo não está vazio */
+      }
+
+/* Estilos para a imagem no rodapé */
+footer {
+    text-align: center; /* Centraliza a imagem horizontalmente */
+  }
   
-
-
-
+  footer img {
+    width: 100%; /* Torna a largura da imagem 100% do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-width: 100%; /* Evita que a imagem ultrapasse seu tamanho natural */
+    display: block; /* Remove espaços extras abaixo da imagem */
+  }
 
 @media screen and (max-width: 900px) {
     .img-intro {
@@ -1382,7 +1538,7 @@ width: 411px;
         top: 50%;
         left: 45%;
         transform: translate(-50%, -50%);
-        margin-top: 200px;
+        margin-top: 350px;
     }
 
     .icon-chat img {
@@ -1404,7 +1560,7 @@ width: 411px;
         top: 50%; /* Centraliza verticalmente */    
         transform: translate(-50%, -50%); /* Corrige a posição após a centralização */
         margin: 0; /* Remover margens que podem interferir com o posicionamento */
-        margin-top: 470px;
+        margin-top: 500px;
         margin-left: 70%;
         margin-right: auto;
         position: absolute;
@@ -1416,7 +1572,7 @@ width: 411px;
     width: 100%;
     flex-direction: column;
     height: auto;
-    margin-top: 700px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    margin-top: 400px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
     align-items: center;
   }
 
@@ -1450,22 +1606,9 @@ width: 411px;
     text-align: center; /* Adicionado para centralizar o conteúdo na horizontal */
   }
 
-  .img-container {
-    max-width: 100%;
-    text-align: center;
-    margin-right: 0;
-    overflow: hidden;
-    display: none;
-  }
-
-  .img-container img {
-    display: none;
-    height: auto;
-    margin: 0;
-    padding: 0;
 
 
-  }
+ 
 
   .item {
     text-align: center;
@@ -1517,8 +1660,9 @@ width: 411px;
     margin-top: 50px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
     align-items: center;
     align-items: center;
-    margin-right: 0;
+    margin-right: auto;
     margin-left: 0;
+    margin-right: 0;
   }
 
   .tag {
@@ -1557,6 +1701,9 @@ width: 411px;
     align-items: center;
     text-align: center;
     margin-top: -990px;
+    margin-right: 0;
+    margin-left: 0;
+   
   }
 
 
@@ -1614,6 +1761,8 @@ width: 411px;
     margin: 0;
   }
 
+
+
   .meto {
     max-width: 100%;
     flex-direction: column;
@@ -1621,6 +1770,7 @@ width: 411px;
      /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
     align-items: center;
     text-align: center;
+    margin: 0;
 
   }
 
@@ -1688,12 +1838,15 @@ line-height: 125%; /* 30px */
 
 .passo-a-passo {
     max-width: 100%;
-    margin: 0;
     height: auto;
      /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
     align-items: center;
     text-align: center;
     margin-top: -850px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    
 }
  
 .img-passo {
@@ -1737,8 +1890,10 @@ white-space: nowrap;
 
   .passo {
     max-width: 100%;
-     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+     margin-right: 0;
     margin-bottom: 10px;
+    text-align: left;
+    justify-content: center;
   }
 
 
@@ -1750,8 +1905,20 @@ white-space: nowrap;
      /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
     align-items: center;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 280px;
     margin-left: 0;
+}
+
+.seta-generica {
+    max-width: 100%;
+    width: auto;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .blog-intro {
@@ -1849,6 +2016,8 @@ white-space: nowrap;
     align-items: center;
     text-align: center;
     margin: 0;
+    justify-items: center;
+    justify-content: center;
 }
 
 .duvidas-titulo {
@@ -1909,10 +2078,159 @@ white-space: nowrap;
     margin: 0;
 }
 
+.accordion {
+    max-width: 100%;
+    width: auto;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
+.accordion-item {
+    max-width: 100%;
+    width: auto;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-header {
+    max-width: 100%;
+    width: auto;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-content {
+    max-width: 100%;
+    width: auto;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.spacing {
+    max-width: 100%;
+    width: auto;
+    flex-direction: column;
+    height: auto;
+     /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container-cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    margin: 0 15px;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px; /* Adapte conforme necessário para o espaçamento entre as imagens */
+  }
 
 
+  .img-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhe as imagens no centro */
+    align-items: center; /* Alinhe as imagens verticalmente no centro */
+    margin-bottom: 10px; /* Adapte conforme necessário para o espaçamento entre os cards */
+  }
+
+  .new {
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens na direção do eixo transversal (vertical) */
+    margin: 0; /* Remove margens para direita e esquerda */
+    height: auto; /* Ajusta a altura automaticamente para o conteúdo */
+    margin-top: 50px;
+  }
+
+  .text-new {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhe as imagens no centro */
+    align-items: center; /* Alinhe as imagens verticalmente no centro */
+    margin-bottom: 10px; /* Adapte conforme necessário para o espaçamento entre os cards */
+    margin-top: 20px; /* Espaçamento entre o texto e o formulário */
+    margin-right: 0;
+  }
+
+  .new-block {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhe as imagens no centro */
+    align-items: center; /* Alinhe as imagens verticalmente no centro */
+    margin-bottom: 10px; /* Adapte conforme necessário para o espaçamento entre os cards */
+  }
+
+  .email-container {
+    max-width: 100%; /* Ajusta a largura máxima para ocupar a largura total do pai */
+  }
+
+  .placeholder-label {
+    left: 0; /* Centraliza o label na largura total do pai */
+    transform: translateY(0); /* Remove o deslocamento no eixo Y */
+  }
+
+  .email-input {
+    width: 100%; /* Ajusta a largura do input para ocupar a largura total do pai */
+    padding-left: 15px; /* Ajusta o padding esquerdo conforme necessário */
+    padding-right: 15px; /* Adiciona um padding direito para espaçamento */
+    margin: 0;
+  }
+
+  .email-icon,
+  .submit-button {
+    position: static; /* Remove a posição absoluta para que fiquem no fluxo normal do documento */
+    width: 100%; /* Ajusta a largura para ocupar a largura total do pai */
+    margin-top: 20px; /* Espaçamento entre os elementos */
+  }
+
+  footer img {
+    width: auto; /* Retorna a largura automática para permitir que a imagem siga a largura original */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+    height: 100%; /* Torna a altura da imagem 100% do contêiner pai */
+    display: block; /* Remove espaços extras abaixo da imagem */
+  }
+
+
+.bg-mobile {
+    width: auto; /* Retorna a largura automática para permitir que a imagem siga a largura original */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+    height: 100%; /* Torna a altura da imagem 100% do contêiner pai */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    background: #FFF;
+    margin: 0;
+  }
+}
 
 
 

@@ -1,8 +1,8 @@
 // Para fechar a navbar
 
 function fecharTopBar() {
-    var topbar = document.getElementById("topbar");
-    topbar.style.display = "none";
+  var topbar = document.getElementById("topbar");
+  topbar.classList.add('hidden');
 }
 
 
@@ -106,4 +106,58 @@ document.addEventListener("DOMContentLoaded", function () {
             content.style.display = item.classList.contains('active') ? 'block' : 'none';
         });
     });
+});
+
+
+// para remover o placeholder quando eu digitar
+
+document.addEventListener('DOMContentLoaded', function () {
+  var emailInput = document.getElementById('email-input');
+  var placeholderLabel = document.querySelector('.placeholder-label');
+
+  emailInput.addEventListener('input', function () {
+    placeholderLabel.style.opacity = emailInput.value.trim() ? 0 : 1;
+  });
+
+  emailInput.addEventListener('focus', function () {
+    placeholderLabel.classList.add('focused');
+  });
+
+  emailInput.addEventListener('blur', function () {
+    placeholderLabel.classList.remove('focused');
+  });
+});
+
+
+
+
+//MODAL
+
+document.addEventListener("DOMContentLoaded", function () {
+  var modal = document.getElementById("myModal");
+  var closeBtn = document.getElementsByClassName("close")[0];
+  var esqueciSenhaBtn = document.getElementById("esqueciSenha");
+
+  esqueciSenhaBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      abrirModal();
+  });
+
+  closeBtn.addEventListener("click", function () {
+      fecharModal();
+  });
+
+  window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+          fecharModal();
+      }
+  });
+
+  function abrirModal() {
+      modal.style.display = "block";
+  }
+
+  function fecharModal() {
+      modal.style.display = "none";
+  }
 });

@@ -1,0 +1,856 @@
+
+@media (max-width: 600px) {
+  .close-btn {
+      margin-right: 2%; 
+  }
+
+  header {
+      flex-direction: column;
+  }
+
+  .container {
+      flex-direction: column;
+      text-align: center; 
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .contato {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+  }
+
+  .container img {
+      margin-bottom: 10px; 
+  }
+
+  .contato a.button {
+      margin-top: 15px; 
+  }
+
+  .intro {
+      flex-direction: column; 
+      align-items: center;
+      gap: 15px; 
+  }
+
+  .img-intro {
+      display: none;
+  }
+
+  .titulo-intro {
+      margin-top: 15px;
+  }
+
+  .content-intro {
+      margin-top: -20px;
+      text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .contato a.button {
+      display: none;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .img-intro {
+      display: none;
+  }
+
+  .titulo-intro {
+      text-align: center; 
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; /* Centraliza o título na horizontal */
+      margin-top: 20px; /* Ajuste conforme necessário para dar espaço ao título */
+  }
+
+  .content-intro { 
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column;
+      text-align: center; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px; /* Ajuste conforme necessário para espaçamento superior */
+  }
+
+  .content-intro p {
+      display: inline-block;
+      align-items: center;
+      text-align: center; /* Centraliza o conteúdo na horizontal */
+      font-size: 32px; /* Ajuste para 32 pixels */
+      margin-top: 10px; 
+  }
+  .content-intro span {
+      align-items: center;
+      display: inline-block;
+      text-align: center; /* Centraliza o conteúdo na horizontal */
+      font-size: 32px; /* Ajuste para 32 pixels */
+      margin-top: 10px; /* Ajuste conforme necessário para espaçamento entre elementos */
+  }
+
+  .content-intro h3 {
+      margin-left: auto;
+      margin-right: auto; /* Adicionado para centralizar horizontalmente */
+      text-align: center; /* Centraliza o conteúdo na horizontal */
+      font-size: 16px; /* Ajuste para 32 pixels */
+      margin-top: 10px; 
+  }
+
+  .botao-intro {
+      margin-right: 0;
+  }
+
+  .botoes-intro {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .botoes-intro img {
+      margin-right: 0; /* Removendo margem à direita para empilhar a imagem abaixo do botão */
+      margin-top: 0; /* Adicionando margem superior para espaçamento entre a imagem e o link */
+  }
+
+  .Fale-Conosco {
+      margin-top: 0; /* Removendo margem superior para alinhar o link com a imagem */
+      margin-left: auto;
+      margin-right: auto; 
+      align-items: center;
+      text-align: center;
+
+  }	
+
+  .Fale-Conosco-div {
+      margin-top: 20px;
+  }
+
+
+
+}
+
+
+
+
+@media (max-width: 1276px) {
+
+  .arrow {
+      display: none;
+  }
+
+  .arrow-sobre {
+      display: none;
+  }
+
+  .icon-chat {
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      margin-top: 200px;
+  }
+
+  .icon-chat img {
+      width: 100%;
+      height: 100%;
+      margin-right: 0;
+  }
+
+  
+  .receita {
+      max-width: 100%;
+      max-height: 100%;
+      width: 221px;
+      height: 199px;
+      display: flex;
+      align-items: right;
+      justify-content: right;
+      position: fixed; /* Torna o elemento fixo na tela */
+      top: 50%; /* Centraliza verticalmente */    
+      transform: translate(-50%, -50%); /* Corrige a posição após a centralização */
+      margin: 0; /* Remover margens que podem interferir com o posicionamento */
+      margin-top: 470px;
+      margin-left: 70%;
+      margin-right: auto;
+      position: absolute;
+}
+
+
+
+.feedback {
+  width: 100%;
+  flex-direction: column;
+  height: auto;
+  margin-top: 700px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+}
+
+.feedback-profile { 
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-text {
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-status {
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 300px; /* Ajuste conforme necessário para espaçamento entre a lista e o bloco feedback */
+}
+
+.lista-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Adicionado para centralizar o conteúdo na horizontal */
+}
+
+
+
+
+
+.item {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.lista {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.item-check {
+  text-align: center;
+  margin-bottom: 10px; /* Ajuste conforme necessário para espaçamento entre itens */
+  align-items: center;
+}
+
+.numero {
+  text-align: center;
+  align-items: center;
+}
+
+.obs {
+  margin-top: 20px; /* Ajuste conforme necessário para espaçamento entre o texto e a lista */
+  text-align: center;
+}
+
+.feedback-text img {
+  margin-right: 0;
+}
+
+.sobre {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+  margin-top: 50px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  margin: auto;
+
+}
+
+.sobre-empresa {
+  max-width: 100%;
+  flex-direction: column;
+  margin-top: 50px; /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tag {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+
+}
+
+.box-check {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+.sobre-titulo {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+.video-imagem {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin-top: -990px;
+  margin-right: 0;
+  margin-left: 0;
+ 
+}
+
+
+
+.img-info {
+
+  max-width: 100%;
+  height: auto;
+  margin-right: 5px;
+  margin-left: 170px;
+  margin-top: 800px;
+  
+}
+
+
+
+.video-img {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+
+}
+
+.patrocinio {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin-top: 500px;
+}
+
+.patrocinio-itens {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+
+.metodologia {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+.meto {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+}
+
+.tag-meto {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+.meto-titulo {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+font-family: Archivo;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 30px */
+}
+
+.meto-mg-info-1 {
+  max-width: 100%; /* Define a largura para 100% quando a tela for menor que 960px */
+
+}
+
+.meto-mg-info-2 {
+  max-width: 100%; /* Define a largura para 100% quando a tela for menor que 960px */
+}
+
+.reflexo {
+  display: none;
+}
+.computador {
+  max-width: 100%;
+  margin: 0;
+}
+
+.meto-mg-info-1,
+.meto-mg-info-2 {
+  max-width: 50%; /* Defina a largura para menos de 50% para deixar espaço para a margem e gap */
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+}
+
+.meto-mg-info-div {
+  max-width: 100%;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  margin-top: 700px;
+  max-height: auto;
+}
+
+.passo-a-passo {
+  max-width: 100%;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin-top: -850px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+  
+}
+
+.img-passo {
+  max-width: 100%;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+.passo-a-passo-div{
+  display: flex;
+  flex-direction: column; /* ou row, dependendo da orientação desejada */
+  align-items: left;
+  justify-content: left;
+  max-width: 100%;
+  height: auto;
+  /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  text-align: left;
+  margin: 0;
+  gap: 67px;
+} 
+
+.passo-texto p {
+  font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+white-space: nowrap;
+}
+
+.passo-texto span {
+  font-family: Calibri;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+white-space: nowrap;
+}
+
+.passo {
+  max-width: 100%;
+   margin-right: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  justify-content: center;
+}
+
+
+
+.blog{
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin-top: 260px;
+  margin-left: 0;
+}
+
+.seta-generica {
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-intro {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+
+.blog-tag {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+.blog-titulo {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+}
+
+.texto-intro {
+ 
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.container-img {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.bg-blog {
+  max-width: 100%;
+}
+
+.image-container {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+}
+
+.image-container img{
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+}
+
+.duvidas {
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.duvidas-intro {
+  width: auto;
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  justify-items: center;
+  justify-content: center;
+}
+
+.duvidas-titulo {
+  width: auto;
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.desc-duvidas {
+  width: auto;
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.botoes-duvidas {
+  width: auto;
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.botao-duvidas {
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  
+}
+
+.botoes-inferiores {
+  width: auto;
+  max-width: 100%;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.accordion {
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-item {
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-header {
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-content {
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.spacing {
+  max-width: 100%;
+  width: auto;
+  flex-direction: column;
+  height: auto;
+   /* Ajuste conforme necessário para espaçamento entre o bloco feedback e o próximo elemento */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container-cards {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  margin: 0 15px;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px; /* Adapte conforme necessário para o espaçamento entre as imagens */
+}
+
+
+.img-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinhe as imagens no centro */
+  align-items: center; /* Alinhe as imagens verticalmente no centro */
+  margin-bottom: 10px; /* Adapte conforme necessário para o espaçamento entre os cards */
+}
+
+.new {
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens na direção do eixo transversal (vertical) */
+  margin: 0; /* Remove margens para direita e esquerda */
+  height: auto; /* Ajusta a altura automaticamente para o conteúdo */
+  margin-top: 50px;
+}
+
+.text-new {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinhe as imagens no centro */
+  align-items: center; /* Alinhe as imagens verticalmente no centro */
+  margin-bottom: 10px; /* Adapte conforme necessário para o espaçamento entre os cards */
+  margin-top: 20px; /* Espaçamento entre o texto e o formulário */
+  margin-right: 0;
+}
+
+.new-block {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinhe as imagens no centro */
+  align-items: center; /* Alinhe as imagens verticalmente no centro */
+  margin-bottom: 10px; /* Adapte conforme necessário para o espaçamento entre os cards */
+}
+
+.email-container {
+  max-width: 100%; /* Ajusta a largura máxima para ocupar a largura total do pai */
+}
+
+.placeholder-label {
+  left: 0; /* Centraliza o label na largura total do pai */
+  transform: translateY(0); /* Remove o deslocamento no eixo Y */
+}
+
+.email-input {
+  width: 100%; /* Ajusta a largura do input para ocupar a largura total do pai */
+  padding-left: 15px; /* Ajusta o padding esquerdo conforme necessário */
+  padding-right: 15px; /* Adiciona um padding direito para espaçamento */
+  margin: 0;
+}
+
+.email-icon,
+.submit-button {
+  position: static; /* Remove a posição absoluta para que fiquem no fluxo normal do documento */
+  width: 100%; /* Ajusta a largura para ocupar a largura total do pai */
+  margin-top: 20px; /* Espaçamento entre os elementos */
+}
+
+footer img {
+  width: auto; /* Retorna a largura automática para permitir que a imagem siga a largura original */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+  height: 100%; /* Torna a altura da imagem 100% do contêiner pai */
+  display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+
+.bg-mobile {
+  width: auto; /* Retorna a largura automática para permitir que a imagem siga a largura original */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+  height: 100%; /* Torna a altura da imagem 100% do contêiner pai */
+  display: block; /* Remove espaços extras abaixo da imagem */
+  background: #FFF;
+  margin: 0;
+}
+}

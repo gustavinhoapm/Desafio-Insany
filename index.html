@@ -16,22 +16,28 @@
     <title>Smart Business</title>
 </head>
 <body>
+  
+  
   <section class="background-group">
+    <div class="bg-mobile">
     <div class="topbar" id="topbar">
         <span class="close-btn" onclick="fecharTopBar()">X</span>
        <p>Mês do digital, aproveite para fazer parte do SmartBusiness!</p>    
       </div>
-  
+      
+     
       <header>
       <div class="container">
         <img src="./assets/img/logo.png" alt="">       
         <div class="contato">
         <img src="./assets/img/img_contato.png" alt="">
-        <b><a href="" class="link-acessar">Acessar</a></b>
-        <a href="#" class="button">Cadastre-se gratuitamente</a>
+        <b><a  target="_blank" href="login.html" class="link-acessar">Acessar</a></b>
+        <a href="login.html" class="button">Cadastre-se gratuitamente</a>
         </div>
       </div>
+    </div>
     </header>
+  
 
     <section class="intro" id="intro">
       <div class="titulo-intro">
@@ -422,10 +428,9 @@
   </div>
 
   <div class="cards">
-    <div class="img-container">
+    <div class="img-container"> 
       <img src="./assets/img/sections1/Group 3.png" alt="Imagem2">
       <img src="./assets/img/sections1/Frame 97.png" alt="Imagem2">
-
     </div>
   </div>
 
@@ -438,11 +443,35 @@
   </div>
 </div>
 
+
+<section class="new">
+  <div class="new-block">
+    <div class="text-new">
+      <p class="tag-new">Newsletter</p>
+      <p class="titulo-new">Fique por dentro das novidades</p>
+      <p class="desc-new">Junte-se a mais de 20.000 clientes que já usam o SB para ficar por dentro de tudo que pode fazer sua empresa crescer. </p>
+    </div>
+
+    <div class="email-container">
+      <input type="email" class="email-input" id="email-input" placeholder=" ">
+      <label for="email-input" class="placeholder-label">Insira seu melhor e-mail</label>
+      <img src="./assets/img/email-icon.png" alt="Ícone de e-mail" class="email-icon">
+      <button type="submit" class="submit-button">Inserir</button>
+    </div>
+    
+  
+  </div>
+</section>
+
+<footer>
+  <img src="./assets/img/footer.png" alt="">
+</footer>
+
         
 
   
 
 </body>
-
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </html>

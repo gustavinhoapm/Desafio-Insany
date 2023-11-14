@@ -15,6 +15,22 @@
     bottom: -5px; /* Mantém a posição da borda 5 pixels abaixo do texto */
 }
 
+.Fale-Conosco-duvidas::after {
+    content: ''; /* Adiciona um elemento de conteúdo vazio */
+    display: block; /* Transforma-o em um bloco para ocupar a largura total do link */
+    border-bottom: 2px solid transparent; /* Adiciona uma borda inferior transparente inicialmente */
+    position: absolute; /* Posiciona a borda absolutamente em relação ao link */
+    width: 0; /* Inicialmente, a borda tem largura zero */
+    transition: width 0.3s ease, bottom 0.3s ease; /* Adiciona uma transição para as propriedades 'width' e 'bottom' */
+    bottom: -5px; /* Posiciona a borda 5 pixels abaixo do texto */
+}
+
+.Fale-Conosco-duvidas:hover::after {
+    width: 100%; /* Quando o mouse está sobre o link, a largura da borda torna-se 100% */
+    border-color: #1E1C2D; /* Define a cor desejada quando o mouse está sobre o link */
+    bottom: -5px; /* Mantém a posição da borda 5 pixels abaixo do texto */
+}
+
 
 
 .link-acessar::after {

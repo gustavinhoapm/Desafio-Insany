@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style_login.css">
+    <script src="https://cdn.jsdelivr.net/countupjs/1.9.3/countUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+    
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+    <div class="logo-container">
+        <img src="./assets/img/login/img-login.png" alt="Logo">
+    </div>
+    
+    <div class="form-container">
+        <form>
+            <div class="login">
+                <p class="login-title">Login</p>                
+            </div>
+            <div class="voltar">
+                <img src="./assets/img/login/seta.png" alt="">
+                <a href="index.html" class="voltar-botao">Voltar</a>                             
+            </div>
+            <div class="form-itens">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+            
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            
+                <div class="remember-me">
+                    <input  class="input-remember"  type="checkbox" id="remember" name="remember">
+                    <label  class="label-remember" for="remember">Lembrar senha</label>
+                    <a href="" id="esqueciSenha">esqueceu sua senha?</a>
+                   
+                </div>
+            </div>
+
+            <div class="botao-entrar">
+            <button  class="btn-entrar" type="submit">Entrar</button>
+        </div>
+
+            <div class="ou-div">
+                <img src="./assets/img/login/img-ou.png" alt="">
+            </div>
+
+            <div class="botao-google">
+                <button  class="btn-google" type="submit"></button>
+            </div>
+
+            <div class="sem-conta">
+                <p>Não tem conta?</p>
+                <a href="#">Inscreva-se</a>
+            </div>
+        </form>
+        
+<div id="myModal" class="modal">
+    <!-- Conteúdo do modal -->
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <div class="container-modal">
+            <div class="logo-container-modal">
+                <img src="./assets/img/login/img-modal.png" alt="Logo">
+            </div>
+            
+            <div class="form-container-modal">
+                <form>
+                    <div class="login-modal">
+                        <p class="login-title-modal">Esqueceu a senha?</p>
+                        <p class="dsc-modal">Digite seu e-mail e enviaremos instruções para redefinir sua senha</p>               
+                    </div>
+                
+                    <div class="form-itens-modal">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="jhon@example.com">
+                
+                    </div>
+        
+                    <div class="botao-entrar-modal">
+                    <button  class="btn-entrar-modal" type="submit">Recuperar senha</button>
+                </div>
+                </form>
+         
+            </div>
+        </div>
+    </div>
+ 
+    </div>
+</div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</html>
+
+
+</div>

@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #F2F5FC;
+  font-family: 'Archivo';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  font-family: 'Archivo';
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 800px;
+  padding: 50px;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  margin-left: 0;
+  padding-left: 0;
+ 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+ 
+}
+
+.form-container label {
+  margin-bottom: 10px; /* Adiciona espaçamento entre o label e o input */
+}
+
+
+.form-container input {
+  width: calc(100% - 20px); /* Reduz a largura e mantém o espaço para margens e padding */
+  padding: 15px; /* Altura aumentada para 15px */
+  margin-bottom: 60px;
+  margin-top: 10px;
+  
+}
+
+.form-container button {
+  width: 100%;
+  padding: 15px;
+}
+
+
+.login-title {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -10px; /* Ajuste a posição para cima conforme necessário */
+
+}
+
+
+.voltar {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente em relação à imagem */
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -90px; /* Ajuste a posição para cima conforme necessário */
+}
+
+.voltar img {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.voltar a {
+  color: var(--brand-neutrals-dark-500, #1E1C2D);
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 21px */
+}
+
+.form-itens label{
+ color: var(--brand-neutrals-dark-50, #757385);
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+  
+}
+
+.remember-me{
+  margin: 0;
+  display: flex;
+  margin-bottom: 30px;
+  
+}
+
+.remember-me input {
+
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-right: 2px;
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+color: var(--brand-neutrals-dark-50, #757385);
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+.remember-me a {
+  margin-left: auto;
+  text-decoration: none;
+  color: var(--brand-primary-light, #2E7AFF);
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+
+.ou-div {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+.btn-entrar {
+  font-family: Archivo;
+  background:#1D63FF;
+  display: flex;
+width: 478px;
+height: 100%;
+max-width: 100%;
+padding: 16px 76px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: white;
+border: none;
+height: 55px;
+cursor: pointer;
+}
+
+.btn-google{
+  background-image: url('../img/login/entrar-google.png');
+  background-position: center;
+  font-family: Archivo;
+  display: flex;
+width: 478px;
+height: 100%;
+max-width: 100%;
+padding: 16px 76px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: white;
+border: none;
+height: 55px;
+cursor: pointer;
+
+}
+
+.sem-conta {
+  display: flex;
+  margin-top: 30px;
+}
+
+.sem-conta p {
+  color: #757385;
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+a {
+  font-family: Archivo;
+}
+
+.sem-conta a {
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: black; /* ou a cor desejada para o texto do link */
+ 
+}
+
+.sem-conta a:hover {
+  text-decoration: underline; /* adicione sublinhado ao passar o mouse */
+}
+
+
+        /* Seus estilos CSS aqui */
+       
+          .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+/* ============================================================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #F2F5FC;
+  font-family: 'Archivo';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  font-family: 'Archivo';
+}
+
+.container-modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 800px;
+  padding: 50px;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  margin-left: 0;
+  padding-left: 0;
+ 
+}
+
+.logo-container-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container-modal img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.form-container-modal {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+ 
+}
+
+.form-container-modal label {
+  margin-bottom: 10px; /* Adiciona espaçamento entre o label e o input */
+}
+
+
+.form-container-modal input {
+  width: calc(100% - 20px); /* Reduz a largura e mantém o espaço para margens e padding */
+  padding: 15px; /* Altura aumentada para 15px */
+  margin-bottom: 60px;
+  margin-top: 10px;
+  
+}
+
+.form-container-modal button {
+  width: 100%;
+  padding: 15px;
+}
+
+
+.login-title-modal {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+
+  color: var(--brand-neutrals-dark-700, #0D0B1A);
+/* Heading / 32 / semi */
+font-family: Archivo;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 40px */
+
+}
+
+.login-modal {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-right: 0;
+}
+
+.dsc-modal {
+  color: var(--brand-neutrals-dark-50, #757385);
+/* Body/16/regular */
+font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+width: 374px;
+
+}
+
+
+
+.form-itens-modal label{
+  color: var(--brand-primary-brand-gray, #052D41);
+  /* Body/14/semi */
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  
+}
+
+.remember-me-modal {
+  margin: 0;
+  display: flex;
+  margin-bottom: 30px;
+  
+}
+
+.remember-me-modal input {
+
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-right: 2px;
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+color: var(--brand-neutrals-dark-50, #757385);
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+.remember-me-modal a {
+  margin-left: auto;
+  text-decoration: none;
+  color: var(--brand-primary-light, #2E7AFF);
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+
+.ou-div-modal {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+.btn-entrar-modal {
+  font-family: Archivo;
+  background:#1D63FF;
+  display: flex;
+width: 478px;
+height: 100%;
+max-width: 100%;
+padding: 16px 76px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: white;
+border: none;
+height: 55px;
+cursor: pointer;
+}
+
+.btn-google-modal{
+  background-image: url('../img/login/entrar-google.png');
+  background-position: center;
+  font-family: Archivo;
+  display: flex;
+width: 478px;
+height: 100%;
+max-width: 100%;
+padding: 16px 76px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: white;
+border: none;
+height: 55px;
+cursor: pointer;
+
+}
+
+.sem-conta-modal {
+  display: flex;
+  margin-top: 30px;
+}
+
+.sem-conta-modal p {
+  color: #757385;
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+a {
+  font-family: Archivo;
+}
+
+.sem-conta-modal a {
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: black; /* ou a cor desejada para o texto do link */
+ 
+}
+
+.sem-conta-modal a:hover {
+  text-decoration: underline; /* adicione sublinhado ao passar o mouse */
+}
+
+
